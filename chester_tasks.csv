@@ -1,0 +1,30 @@
+Title,Body,Status,Labels
+Add edit functionality for journal entries,Enable inline or modal editing with save/cancel flow.,To do,feature
+Implement undo/redo for journal editing,Support undo and redo states during journal editing.,To do,feature
+Add mood and tag metadata to journal entries,Let users assign mood and emotional tags to each entry.,To do,feature
+Transcribe voice-based journal input,Allow users to record voice memos and transcribe to text.,To do,"feature,voice"
+Analyze journal tone from voice input,Detect emotional tone from voice pitch/pacing and store as metadata.,To do,"tone,AI"
+Analyze tone from text journal input,Use NLP to extract tone/emotion from text and store.,To do,"tone,AI"
+Build AI chat interface for Chester,Create a React-based UI for users to talk to Chester.,To do,"feature,AI"
+Feed past journal memory into AI,Allow Chester to reference previous user journal entries.,To do,"AI,context"
+Retrieve community posts based on journal,Match journal content with community posts to show related stories.,To do,"AI,feature"
+Curate top 10 mental health frameworks,Collect and rewrite CBT/DBT/grounding techniques into Chester tone.,To do,dataset
+Store frameworks in Supabase,Save rewritten mental health techniques in a structured Supabase table.,To do,backend
+Create prompts for each framework,"Add warm, human prompts that Chester can ask as follow-ups.",To do,content
+Add sample responses for each framework,Write 1–2 Chester-style replies using each framework for training.,To do,content
+Setup RAG retrieval for framework database,Build RAG layer to fetch frameworks based on journal content.,To do,"AI,RAG"
+Setup n8n Reddit → Supabase ingestion,Use Reddit API to pull community posts and save to Supabase.,Done,"backend,n8n"
+Scale Reddit ingestion with more subreddits,Add more relevant mental health subreddits to n8n fetch.,To do,"backend,dataset"
+Support delta-fetching to avoid duplicates,Only fetch new Reddit posts not already in Supabase.,To do,"backend,n8n"
+Add Reddit comments to enrich context,Extend ingestion to include top-level comments.,To do,"dataset,n8n"
+Create 5 simulated user personas,"Design fictional users with varying age, background, mental state.",To do,dataset
+Generate journal entries per persona,Write 3–5 journal entries per persona with tags and tone.,To do,dataset
+Add emotion/tone tags to each persona post,Label persona entries with inferred emotion + tone.,To do,dataset
+Transcribe podcast/YT convos for empathy flow,"Find and transcribe real-life convos that show listening, story, pacing.",To do,"dataset,AI,tone"
+Label podcast segments by emotional phase,"Tag conversation with labels like venting, validation, story-share.",To do,"AI,tagging"
+Prioritize SG/MY cultural tone in conversations,Include Singaporean and Malaysian voices and local expressions.,To do,"localization,dataset"
+Design tone-based response strategy,Map tone analysis (text/voice) to different Chester response flows.,To do,"AI,tone"
+"Implement ""just listening"" response style",Allow Chester to respond empathetically without offering solutions.,To do,"AI,UX"
+Add story-sharing behavior,Allow Chester to softly share relevant user/community stories.,To do,"AI,UX"
+Store all tone/emotion metadata in Supabase,"Save mood, tone, tags for each journal + community post.",To do,backend
+Build visual tone timeline (optional),Visualize emotional trend based on journal tone over time.,Backlog,analytics
